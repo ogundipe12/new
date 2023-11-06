@@ -7,7 +7,7 @@ class Config:
     '''Base configuration class
     '''
     # database URI for SQLAlchemy
-    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+    SQLALCHEMY_DATABASE_URI = 'postgresql://volunteers_ck6d_user:qxLwPQk0FFPc3GEhKggGTICqFpd4ec8j@dpg-cl4fivp828mc73fjbjg0-a/volunteers_ck6d'
 
     # Disable track modifications to avoid warning
     SQLALCHEMY_TRACK_MODIFICATIONS = False
@@ -16,7 +16,7 @@ class ProductionConfig(Config):
     '''Production configuration class
     '''
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+    SQLALCHEMY_DATABASE_URI = 'postgresql://volunteers_ck6d_user:qxLwPQk0FFPc3GEhKggGTICqFpd4ec8j@dpg-cl4fivp828mc73fjbjg0-a/volunteers_ck6d'
 
     # Mapping config names to their respective classes
 config_map = {
