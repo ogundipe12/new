@@ -18,5 +18,5 @@ class Volunteer(db.Model):
     education = db.Column(db.String(20), nullable=False)
     contact_address = db.Column(db.String(200), nullable=False)
     email = db.Column(db.String(100), nullable=False, unique=True)
-    phone_number = db.Column(db.String(15), nullable=False)
+    phone_number = db.Column(db.String(20), nullable=False)
     created_date = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
