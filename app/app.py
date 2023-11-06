@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from flask import Flask
-from config import Config
+from app.config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 
