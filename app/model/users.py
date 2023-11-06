@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from datetime import datetime
 from sqlalchemy import UniqueConstraint
-from app import db 
+from app.app import db 
 
 class Volunteer(db.Model):
     ''' A class that defines the registered users

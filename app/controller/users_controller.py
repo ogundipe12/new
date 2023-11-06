@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 from flask import Blueprint, request, jsonify
-from app import create_app, db
+from app.app import create_app, db
 from datetime import datetime
 from sqlalchemy.exc import SQLAlchemyError
-from model.users import Volunteer
+from app.model.users import Volunteer
 import phonenumbers
 from phonenumbers.phonenumberutil import NumberParseException
 
