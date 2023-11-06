@@ -17,7 +17,7 @@ def create_app():
 
 
     # Register the user Blueprint
-    from controller.users_controller import user_bp
+    from app.controller.users_controller import user_bp
     app.register_blueprint(user_bp, url_prefix='/api')
 
 
